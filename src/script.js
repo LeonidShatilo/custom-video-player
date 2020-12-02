@@ -2,10 +2,11 @@
 const player = document.querySelector('.player'),
       video = player.querySelector('.viewer'),
       progress = player.querySelector('.progress'),
-      progressBar = player.querySelector('.progress__filled'),
+      progressBar = player.querySelector('.progress-filled'),
       toggle = player.querySelector('.toggle'),
       skipButtons = player.querySelectorAll('[data-skip]'),
-      ranges = player.querySelectorAll('.player__slider');
+      ranges = player.querySelectorAll('.player-slider'),
+      size = document.querySelector('.over-size');
 
 /* Build out functions */
 function togglePlay() {
@@ -55,3 +56,5 @@ progress.addEventListener('click', scrub);
 progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => (mousedown = true));
 progress.addEventListener('mouseup', () => (mousedown = false));
+
+size.addEventListener('click', () => {player.classList.toggle('full-screen')});
