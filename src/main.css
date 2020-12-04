@@ -60,7 +60,6 @@ body {
 }
 
 .player-button:focus {
-  /* border-color: #ffc600; */
   border-color: #d63737;
 }
 
@@ -105,7 +104,6 @@ body {
 
 .progress-filled {
   width: 50%;
-  /* background: #ffc600; */
   background: #d63737;
   flex: 0;
   flex-basis: 0%;
